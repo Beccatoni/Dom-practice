@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body id="body">
+    
+
+
+
+
+    <script>
+const bodyEl = document.getElementById("body");
+const sectionEl = document.createElement('section');
+bodyEl.appendChild(sectionEl);
+
+
+const div = document.createElement('div');
+sectionEl.appendChild(div);
+
+const h1 = document.createElement('h1');
+h1.textContent = 'Welcome to my website!'
+div.appendChild(h1)
+const paragraph = document.createElement('p');
+paragraph.textContent = 'Hello my name is Rebecca, I appreciate you checked in!😎';
+div.appendChild(paragraph);
+
+bodyEl.style.cssText = 'background-color:#fcd3d1;'
+sectionEl.style.cssText = 'background-color:#bd8e62; width:80%; height:80vh; display:flex; justify-content:center; margin:auto; align-items:center;'
+
+<!-- console.log(sectionEl); -->
+const buttonEl = document.createElement('button');
+buttonEl.textContent = 'Click Me';
+buttonEl.style.cssText = 'padding:10; background-color:#a46843; border-radius:10px; height:30px; width:90px; border:none'
+
+
+buttonEl.addEventListener('click', () =>{ 
+    sectionEl.style.backgroundColor ='black'
+    buttonEl.style.backgroundColor = '#915c4c'
+    h1.style.color ='white',
+    h1.textContent = 'Tadaaaaaaaa!!!!'
+    paragraph.style.color = 'white'
+    paragraph.textContent = 'Hang in here, you will see magic!!!!!😎';
+
+})
+div.appendChild(buttonEl);
+
+    </script>
+</body>
+</html>
