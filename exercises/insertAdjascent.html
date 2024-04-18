@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>The element Object</h1>
+    <h2>The insertAdjascentHtml() Method</h2>
+
+    <button onclick="myFunction()" style="background-color: blueviolet;">Insert</button>
+    <p>Click 'Insert' to insert a paragraph after the header.</p>
+   
+    <h2 id="myH2">My Header</h2>
+
+
+
+    <script>
+        function myFunction(){
+            const h2 = document.getElementById('myH2');
+            let html = '<p>My new paragraph.</p>';
+            h2.insertAdjacentHTML('afterEnd', html)
+            console.log(h2);
+        }
+    </script>
+</body>
+
+
+
+</html>

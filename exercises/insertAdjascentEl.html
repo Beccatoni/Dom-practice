@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The InsertAdjantElement() Method</h2>
+
+    <button onclick="myFunction()" style="border-radius: 10px; background-color:brown; color:white">Move</button>
+    <p>Click 'Move' to insert the red span after the header.</p>
+
+    <span id="mySpan" style="color: rgb(75, 75, 6);">My Spannaaa</span>
+    <h2 id="myH2">My header</h2>
+
+
+
+
+    <script>
+
+        function myFunction(){
+            const span = document.getElementById("mySpan");
+            const h2 = document.getElementById("myH2");
+            h2.insertAdjacentElement("afterend", span)
+        }
+    </script>
+</body>
+
+
+</html>
